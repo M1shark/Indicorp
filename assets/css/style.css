@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*=============== HEADER ===============*/
+
+.header {
+    padding: 25px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header-logo {
+    z-index: 999;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+    letter-spacing: 0.1px;
+    /* text-color */
+    color: #252B42;
+}
+
+.header-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.header-item {
+    list-style: none;
+}
+
+.header-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    text-align: center;
+    letter-spacing: 0.2px;
+    /* second-text-color */
+    color: black;
+    transition: .5s;
+}
+
+.header-link:hover {
+    color: #3C82F4;
+}
+
+.nav-toggle {
+    display: none;
+    z-index: 999;
+}
+
+@media(max-width:992px) {
+    .header-menu {
+        position: fixed;
+        backdrop-filter: blur(15px);
+        width: 100%;
+        height: 100vh;
+        top: -100%;
+        left: 0;
+        transition: .4s;
+        z-index: 50;
+    }
+    .nav-toggle {
+        display: block;
+    }
+    .header-list {
+        align-items: center;
+        flex-direction: column;
+        row-gap: 50px;
+        transition: .4s;
+    }
+    .show-menu {
+        top: 0rem;
+        padding: 90px 0 0 0;
+    }
+    .header-log {
+        column-gap: 10px;
+    }
+    .header-log__item {
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+}
+
+
+/*=============== HEADER ===============*/
+
+
+/*=============== HOME ===============*/
+
+.home {
+    background: url(../img/home/home-bg.jpg) no-repeat center top;
+    background-size: cover;
+    padding-bottom: 50px;
+    height: 793px;
+}
+
+.home-header {
+    padding-top: 185px;
+    max-width: 540px;
+}
+
+.home-header__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin-bottom: 35px;
+}
+
+.home-header__sub-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin-bottom: 35px;
+}
+
+.home-header__link {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.home-header__link-item {
+    padding: 10px 36px;
+    border: 1px solid #00A0C1;
+    border-radius: 37px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    transition: .5s;
+}
+
+.home-header__link-item:hover {
+    background: #FFA62B;
+    color: #FFFFFF;
+}
+
+.home-card {
+    margin-top: 80px;
+}
+
+.home-card__one {
+    padding: 40px 60px 35px 40px;
+    background: white;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+
+.home-card__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    margin: 15px 0 10px 0;
+    color: #252B42;
+}
+
+.home-card__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.home-card__two {
+    padding: 40px 75px 35px 40px;
+    background: white;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+
+.home-card__thre {
+    padding: 40px 75px 35px 40px;
+    background: #00A0C1;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+
+.home-card__title-thre {
+    color: #FFFFFF;
+}
+
+.home-card__text-thre {
+    color: #FFFFFF;
+}
+
+@media(max-width:1020px) {
+    .home {
+        height: 100%;
+    }
+    .home-card {
+        justify-content: center;
+    }
+}
+
+@media(max-width:640px) {
+    .home-header {
+        justify-content: center;
+        text-align: center;
+        max-width: none;
+    }
+    .home-header__link {
+        justify-content: center;
+    }
+    .home-header__title {
+        font-size: 50px;
+    }
+    .home-header__sub-title {
+        font-weight: 600;
+    }
+}
+
+
+/*=============== HOME ===============*/
+
+
+/*=============== CHOOSE ===============*/
+
+.choose {
+    background: #FAFAFA;
+    padding: 150px 0 80px 0;
+}
+
+.choose-header__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin-bottom: 10px;
+}
+
+.choose-header__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.choose-card {
+    margin-top: 50px;
+}
+
+.choose-card__body {
+    padding: 30px 60px;
+    background: #FFFFFF;
+}
+
+.choose-card__body-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin: 10px 0 10px 0;
+}
+
+.choose-card__body-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #737373;
+}
+
+
+/*=============== CHOOSE ===============*/
+
+
+/*=============== PRACTICE ===============*/
+
+.practice {
+    padding: 80px 0;
+    background: #FAFAFA;
+}
+
+.practice-header__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin-bottom: 10px;
+}
+
+.practice-header__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.practice-card {
+    margin-top: 50px;
+}
+
+.practice-card__body {
+    background: #FFFFFF;
+}
+
+.practice-card__body-info {
+    padding: 24px 30px 0 30px;
+}
+
+.practice-card__body-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin-bottom: 15px;
+}
+
+.practice-card__body-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin-bottom: 30px;
+}
+
+.practice-card__body-img img {
+    width: 100%;
+}
+
+
+/*=============== PRACTICE ===============*/
+
+
+/*=============== SERVICE ===============*/
+
+.service {
+    padding: 100px 0;
+}
+
+.service-header {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.service-header__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin-bottom: 15px;
+}
+
+.service-header__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.service-content {
+    margin-top: 100px;
+    justify-content: space-around;
+}
+
+.service-info__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin-bottom: 10px;
+}
+
+.service-info__sub-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin-bottom: 50px;
+}
+
+.service-info__list {
+    margin-bottom: 30px;
+    list-style: none;
+    display: flex;
+}
+
+.service-info__list-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.service-info__list-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.service-info__list-icon__one::before {
+    content: url(../img/service/list-icon-one.svg);
+    margin-right: 20px;
+}
+
+.service-info__list-icon__two::before {
+    content: url(../img/service/list-icon-two.svg);
+    margin-right: 20px;
+}
+
+@media(max-width:1020px) {
+    .service-content {
+        align-items: center;
+    }
+}
+
+
+/*=============== SERVICE ===============*/
