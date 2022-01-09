@@ -468,3 +468,345 @@ body {
 
 
 /*=============== SERVICE ===============*/
+
+
+/*=============== PARTNERS ===============*/
+
+.partners {
+    padding: 50px 0;
+    background: #FAFAFA;
+    position: relative;
+}
+
+.partners-logo__list {
+    align-items: center;
+}
+
+.partners-logo__list-item {
+    list-style: none;
+}
+
+.partners-form {
+    margin-top: 70px;
+    padding: 50px 30px;
+    background: #16697A;
+    border-radius: 2px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 12;
+}
+
+.partners-form__text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+.partners-form__body {
+    position: relative;
+}
+
+.partners-form__body-input {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    padding: 15px 0 15px 20px;
+}
+
+.partners-form__body-btn {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    background: #FFA62B;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 0px 5px 5px 0px;
+    padding: 3px 22px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+
+.partners-color {
+    height: 77px;
+    background: #252B42;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+}
+
+@media(max-width:1020px) {
+    .partners-logo__list {
+        justify-content: center;
+    }
+    .partners-logo__list-item {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    .partners-form__text {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .partners-form {
+        justify-content: center;
+    }
+}
+
+
+/*=============== PARTNERS ===============*/
+
+
+/*=============== GET ===============*/
+
+.get {
+    padding: 80px 0;
+    background: #F3F3F3;
+}
+
+.get-header__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.get-header__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.get-card {
+    margin-top: 80px;
+    align-items: center;
+}
+
+.get-card__body {
+    background: #FFFFFF;
+    padding: 50px 40px;
+}
+
+.get-card__body-img {
+    margin-bottom: 15px;
+}
+
+.get-card__body-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+.get-card__body-support {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin: 15px 0;
+}
+
+.get-card__body-btn {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFA62B;
+    padding: 10px 15px;
+    border: 1px solid #00A0C1;
+    border-radius: 15px;
+}
+
+.get-card__body-btn:hover {
+    background: #FFA62B;
+    color: #FFFFFF;
+}
+
+.get-card__body-center {
+    padding: 80px 40px;
+    background: #252B42;
+}
+
+.get-card__body-center__text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.get-card__body-center__support {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin: 15px 0px;
+}
+
+.get-card__body-center__btn {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: white;
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.get-card__body-center__btn:hover {
+    background: #FFA62B;
+    color: #FFFFFF;
+}
+
+
+/*=============== GET ===============*/
+
+
+/*=============== CONSULTING ===============*/
+
+.consulting {
+    padding: 80px 0;
+}
+
+.consulting-content {
+    align-items: center;
+}
+
+.consulting-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.consulting-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.consulting-btn {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    padding: 15px 40px;
+    background: #FFA62B;
+    border-radius: 5px;
+}
+
+@media(max-width:640px) {
+    .consulting-content {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+/*=============== CONSULTING ===============*/
+
+
+/*=============== FOOTER ===============*/
+
+.footer {
+    padding: 50px 0;
+    background: #16697A;
+}
+
+.footer-list__body-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin: 0 0 20px 0;
+}
+
+.footer-list__body {
+    display: flex;
+    list-style: none;
+    margin: 0 0 10px 0;
+    align-items: center;
+}
+
+.footer-list__body-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.footer-list__body-text:hover {
+    color: gray;
+}
+
+.footer-list__body-contact__tel::before {
+    content: url(../img/footer/1.svg);
+    margin-right: 10px;
+}
+
+.footer-list__body-contact__geo::before {
+    content: url(../img/footer/2.svg);
+    margin-right: 10px;
+}
+
+.footer-list__body-contact__tg::before {
+    content: url(../img/footer/3.svg);
+    margin-right: 10px;
+}
+
+@media(max-width:640px) {
+    .footer-content {
+        justify-content: space-between;
+    }
+}
+
+
+/*=============== FOOTER ===============*/
